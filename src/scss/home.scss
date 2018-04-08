@@ -1,0 +1,30 @@
+.home-sections-nav {
+    
+    .nav-item .nav-link {
+        color: $theme-grey !important;
+        
+        &.active {
+            color: $theme-black!important;
+            background-color: transparent;
+            border-bottom: 1px solid $theme-red;
+            border-radius: 0;
+        }
+    }  
+}
+
+.btn-user-edit {
+    &:hover,
+    &:focus {
+        background-color: #dee2e6 !important;
+    }
+}
+
+.user-container {
+    @include for-screen('tablet') {
+        text-align: center !important;
+    }
+}
+
+.repo-tech-badge {
+    letter-spacing: 1px;
+}

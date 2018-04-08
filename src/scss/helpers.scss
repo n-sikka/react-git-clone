@@ -1,0 +1,35 @@
+.app-container {
+    width: $container-width-default;
+    margin: 0 auto;
+
+    @each $container-size-label, $container-size-value in $container-map {
+        &.#{$container-size-label} {
+            max-width: #{$container-size-value};
+        }
+    }    
+}
+
+.text-xs {
+    font-size: $font-size-xs;
+}
+.text-sm {
+    font-size: $font-size-sm;
+}
+.text-md {
+    font-size: $font-size-md;
+}
+.text-lg {
+    font-size: $font-size-lg;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-bolder {
+    font-weight: bolder;
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+$font-family-primary: 'Oxygen', sans-serif;
+
+$purple: hsla(279%, 33%, 44%, 1);
+$black: hsla(0%, 0%, 20%, 1);
+$blue: hsla(210%, 50%, 51%, 1);
+$white: hsla(60%, 53%, 97%, 1);
+$green: hsla(90%, 45%, 49%, 1);
+
+/* RGB */
+$theme-purple: rgba(123, 75, 148, 1);
+$theme-black: rgba(51, 51, 51, 1);
+$theme-blue: rgba(67, 129, 193, 1);
+$theme-white: rgba(251, 251, 242, 1);
+$theme-green: rgba(126, 183, 69, 1);
+$theme-red: rgba(237, 44, 37, 1);
+$theme-grey: rgba(189,189,189, 1);
+$theme-light-grey: lighten($theme-grey, 18%);
+$theme-dark-grey: darken($theme-grey, 20%);
+
+
+$font-size-xs: 12px;
+$font-size-sm: 16px;
+$font-size-md: 24px;
+$font-size-lg: 32px;
+
+// this is the default container width
+$container-width-default: 96%;
+
+// Different container max-widths
+$container-map: (
+    'xl': 2560px,
+    'lg': 1920px,
+    'md': 1400px,
+    'sm': 1280px,
+    'xs': 1024px   
+);
+
+/*
+ * SPACERS
+ */
+ 
+ $base-space: 0.5rem; //8px
+
+
+
+ $spacer: $base-space;
+ 
+ $spaces: (
+     '0': 0rem,
+     '1': $base-space*1,
+     '2': $base-space*2,
+     '3': $base-space*3,
+     '4': $base-space*4,
+     '5': $base-space*5,
+     '6': $base-space*6
+ );
+
+ /*
+ * BREAKPOINTS
+ */
+
+$mobile-sm: 320px;
+$mobile: 425px; //targetting android phones as standard
+$tablet: 768px;
+$desktop: 1366px;
+$super-desktop: 1920px

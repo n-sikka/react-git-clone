@@ -1,0 +1,105 @@
+* {
+    font-family: $font-family-primary!important;
+    color: $theme-black;
+}
+
+html, body {
+    font-size: $font-size-sm;
+}
+
+h1 {
+    font-size: $font-size-lg;
+    font-weight: bolder;
+}
+
+h2, h3 {
+    font-size: $font-size-md;
+    font-weight: bold;
+}
+
+h4, h5, h6 {
+    font-size: $font-size-sm;
+    font-weight: bold;
+}
+
+a {
+    color: $theme-blue!important;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: darken($theme-blue, 18%);
+    }
+}
+
+p {
+    font-size: $font-size-sm;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+small {
+    font-size: $font-size-xs;
+    font-weight: normal;
+}
+
+
+// Bootstrap Override
+.btn {
+    margin: 0 0.5rem;
+}
+
+.btn-primary {
+    background-color: $theme-blue;
+}
+
+.btn-success {
+    background-color: $theme-green;
+}
+
+.btn-accent {
+    background-color: $theme-purple;
+    color: $white;
+}
+
+.btn-outline-primary {
+    border-color: $theme-blue;
+}
+
+.btn-outline-success {
+    border-color: $theme-green;
+}
+
+.btn-outline-accent {
+    background-color: transparent;
+    border-color: $theme-purple;
+    color: $theme-purple;
+
+    &:hover, &:active {
+        background-color: $theme-purple;
+        color: $white;
+    }
+}
+
+.text-muted {
+    color: $theme-dark-grey!important;
+}
+
+
+.badge-secondary {
+    background-color: $theme-light-grey;
+    color: $theme-dark-grey;
+}
+
+.navbar {
+    &.bg-dark {
+        * {
+            color: $white !important;
+        }
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+}
